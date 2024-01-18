@@ -39,11 +39,11 @@ public class Loteria {
         for (int i = 0; i < ciudad.size() - 1; i++) {
             Localidad actual = ciudad.get(i);
             Localidad siguiente = ciudad.get(i + 1);
-            if (actual.getInvertido() <= siguiente.getInvertido() && actual.getPremios() < siguiente.getPremios()){
-                return true;
+            if (actual.getInvertido() < siguiente.getInvertido() && actual.getPremios() >= siguiente.getPremios()){
+                return false;
             }
         }
-        return false;
+        return true;
     }
 
 
