@@ -29,7 +29,7 @@ public class Localidad implements Comparable<Localidad>{
       if (this.invertido == other.getInvertido()){
           return this.premios - other.getPremios();
       }else {
-          return other.invertido - this.getInvertido();
+          return this.invertido - other.getInveritdo();
       }
     }
 
