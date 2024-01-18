@@ -31,7 +31,7 @@ public class Inventario implements Comparable<Inventario> {
     public int compareTo(Inventario other) {
         if (this.valor == other.getValor() ){
             if (this.peso == other.getPeso()){
-                return this.valor - other.getValor();
+                return 0;
             }
             return this.peso - other.getPeso();
         }
